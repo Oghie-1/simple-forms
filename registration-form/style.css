@@ -1,0 +1,70 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b32;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+.header, p {
+    margin: 0.75rem auto;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.4rem;
+
+}
+.form-wrapper {
+    color: #1b1b32;
+    max-width: 800px;
+    max-height: fit-content;
+    min-width: none;
+    margin: 0.5rem auto;
+    padding: 0.3rem auto 3rem auto;
+    background-color: darkgray;
+    border-radius: 0.5rem;
+    font-size: 16px;
+}
+
+label {
+    margin: 0.1rem auto;
+    padding: 1px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.bio-profile, .contact {
+    margin: 1px auto;
+    border: none;
+    padding: 0 0 3px auto;   
+}
+
+button {
+    width: 70%;
+    height: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    margin-left: 15%;
+    border-radius: 5px;
+    background-color: coral;
+}
+
+button:hover {
+    background-color: aquamarine;
+}

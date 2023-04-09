@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Product Registration Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main name="main-container" id="container" class="body-container">
+            <div id="header-wrapper" class="header-wrapper">
+                <h1 id="title" class="header">Product Registration Form</h1><p id="description">Thanks for registering for our free product testing round</p>
+            </div>
+
+            <div id="forms-wrappings" class="form-wrapper">
+                <form id="registration-form">
+
+                    <fieldset id="bio-profile" class="bio-profile">
+                        <h1>Bio-profile</h1>
+                        <label id="name" for="first-name">First Name
+                            <input id="first-name" name="name" class="name" required type="text" placeholder="First Name">
+                        </label>
+                        <label  id="name" for="last-name">Last Name
+                            <input id="last-name" class="name" name="name" required type="text" placeholder="Last Name">
+                        </label>
+                        <label id="dob" class="dob" for="age"> Age
+                            <input id="dob" type="number" class="dob" name="age" required placeholder="Age" max="120" min="18">
+                        </label>
+                        <label for="dropdown">Select your gender:
+                            <select id="dropdown" name="gender" required>
+                                <option value="" disabled selected>Select your gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </label>
+                        
+                    </fieldset>
+
+                    <fieldset id="contact" class="contact">
+                        <h1>Contact</h1>
+                        <label>Email
+                            <input id="email" class="email" required placeholder="email" type="email">
+                        </label>
+                        <label>Phone Number
+                            <input id="tel" class="phone" required type="number">
+                        </label>
+                        <div class="address">
+                            <h3>Address</h3>
+                            <label id="address" class="address">Street Name
+                                <input id="address" class="address" placeholder="Street Name" type="text">
+                            </label>
+                            <label id="address" class="address">City/Town
+                                <input id="address" class="address" placeholder="City" type="text">
+                            </label>
+                            <label id="address" class="address">State/Province
+                                <input id="address" class="address" placeholder="State" type="text">
+                    
+                            </label>
+                            <label id="address" for="address">Postal/Zip Code
+                                <input id="address" class="address" placeholder="Postal/Zip Code" type="text">
+                            </label>
+                        </div>
+                        <label id="promotion" for="promotion"> Do you want us to send you product announcements and special offers?
+                    
+                            <input id="promotion" name="promotions" class="promotion" type="checkbox" value="yes" required> Yes
+                            <input id="promotion" class="promotion" type="checkbox" value="no" required> No
+                        </label>
+                    
+                    </fieldset>
+                    <div class="submit-btn">
+                        <button type="submit" id="submit">Register</button>
+                    </div>
+
+                </form>
+                
+
+            </div>
+
+        </main>
+    </body>
+
+
+</html>
