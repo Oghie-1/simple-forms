@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vaccine Registration Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <main id="body-wrapper">
+            <div id="header-wrapper">
+                <h1>Medical Vaccine Registration Form</h1>
+                <p>This form would collect data concerning your previous medical and vaccination history</p>
+            </div>
+
+            <div class="form-wrapper">
+                <form id="vaccination-form" method="post">
+
+                    <fieldset id="profile">
+
+                        <label id="name" for="first-name">First Name </label>
+                        <input id="first-name" class="profile" name="first-name" type="text" placeholder="First Name" required>
+                        <label id="name" for="last-name">Last Name </label>
+                        <input id="first-name" class="profile" name="last-name" type="text" placeholder="Last Name" required>
+                        <label id="nin" for="nin">National Security Number</label>
+                        <input id="identification" class="profile" name="nin" type="text" placeholder="National Security Number " required>
+                        <label id="dob" for="date-of-birth">Birth Date</label>
+                        <input id="age" class="profile" name="date-of-birth" placeholder="MM-DD-YYYY" type="datetime" required>
+                        
+                        <label id="gender" for="gender">Gender</label>
+                        <div>
+                            <label for="male"></label>
+                            <input id="male" class="profile" name="gender" type="radio" required>Male
+                            <label for="female"></label>
+                            <input id="female" class="profile" name="gender" type="radio" required>Female
+                        </div>
+
+                        <label for="email">Email </label>
+                        <input id="email" class="profile" name="email" type="email" placeholder="example@example.com" required>
+                        <label for="phone">Phone Number </label>
+                        <input id="tel-nos" class="profile" name="phone" type="text" placeholder="please enter a valid phone number" required>
+
+                        <div id="address" class="address-title">
+                            <br>
+                            <h5>Address</h5>
+                            <label for="street-address">Street </label>
+                            <input id="street-address" class="profile" type="text" name="street-address" placeholder="Street Address" required>
+                            <label for="city">City </label>
+                            <input id="city-address" class="profile-address" type="text" name="City" placeholder="City" required>
+                            <label for="city">State / Province </label>
+                            <input id="city-address" class="profile-address" type="text" name="State / Province" placeholder="State / Province" required>
+                    
+                        </div>
+
+                        <label for="insurance">Insurance Company </label>
+                        <input id="insurance-co" class="profile" name="insurance-co" type="text" placeholder="Enter Your Insurance Provider" required>
+                        <label for="insurance-id">Insurance ID </label>
+                        <input id="insurance-id" class="profile" name="insurance-id" type="text" placeholder="Enter Your Insurance Identification Number" required>
+                        
+
+                    </fieldset>
+
+                    <button id="next"><a href="reg-main-2.html">Next</a></button>
+
+
+                   
+
+                    <fieldset id="profile"></fieldset>
+                    
+                </form>
+            </div>
+           
+
+        </main>
+    </body>
+</html>

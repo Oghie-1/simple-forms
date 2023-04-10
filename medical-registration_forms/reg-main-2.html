@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Vaccine Registration Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <main id="body-wrapper">
+            <div id="header-wrapper">
+                <h5>Health and Medical History</h1>
+            </div>
+            <hr>
+            
+            <div class="form-wrapper">
+                <form class="med-history">
+                    <fieldset id="profile">
+                        <label for="prior-condition">Do you have any chronic health condition?</label>
+                        <input id="prior" class="med-condition" name="prior-condition" type="text-box" placeholder="Type here..." required>
+                        <p class="small-wordings">Please inidcate all health issues that are considered within the risk group</p>
+                    </fieldset>
+
+                    <fieldset id="profile">
+                        <label for="allergy-list">Please list down your allergies</label>
+                        <input id="allergies" class="med-condition" name="allergy-list" type="text-box" placeholder="Allergic to" required>
+                        <input id="save-allergy-list" class="save" type="submit" placeholder="SAVE">
+                    </fieldset>
+
+                    <fieldset id="profile">
+                        <label for="symptoms">Please check the symptoms that apply</label>
+                        <div>
+                            <input id="symptoms-list" name="taste" class="med-condition" type="checkbox" required>
+                            <label for="taste">Loss of taste or smell</label>
+                            <input id="symptoms-list" name="fever" class="med-condition" type="checkbox" required>
+                            <label for="fever">High fever</label>
+                            <input id="symptoms-list" name="breathing-difficulty-" class="med-condition" type="checkbox" required>
+                            <label for="breathing-difficulty">Difficulty in breathing</label>
+                            <input id="symptoms-list" name="ache" class="med-condition" type="checkbox" required>
+                            <label for="ache">Body aches</label>  
+                            <input id="symptoms-list" name="runny-nose" class="med-condition" type="checkbox" required>
+                            <label for="taste">Runny nose</label>
+                            <input id="symptoms-list" name="diarrhea" class="med-condition" type="checkbox" required>
+                            <label for="diarrhea">Diarrhea</label>
+                            <input id="symptoms-list" name="cough" class="med-condition" type="checkbox" required>
+                            <label for="cough">Cough</label>
+                            <input id="symptoms-list" name="pain-pressure" class="med-condition" type="checkbox" required>
+                            <label for="pain-pressure">Persistant pain or pressure on chest</label>
+                            <input id="symptoms-list" name="nasal-congestion" class="med-condition" type="checkbox" required>
+                            <label for="nasal-congestion">Nasal congestion</label>
+                            <input id="symptoms-list" name="sore-throat" class="med-condition" type="checkbox" required>
+                            <label for="sore-throat">Sore throat</label>
+                            <input id="symptoms-list" name="other" class="med-condition" type="checkbox" required>
+                            <label for="other">Others</label>
+
+                        </div>
+                       
+                    </fieldset>
+                    <fieldset>
+                        <label for="covid-19">Have you been diagnosed with COVID-19</label>
+                        <input id="covid-19_positive" class="med-condition" type="radio" required> Yes
+                        <input id="covid-19_negative" class="med-condition" type="radio" required> No
+
+                        <label for="covid-19_positive-comment"> If yes, please provide further details (date of diagnition, were you hospitalized or not, treatment, etc.)</label>
+                        <input id="covid-comment" name="covid-19_positive-comment" class="med-condition" type="text-box" placeholder="Type here">
+
+                        <label for="declarations"> I hereby declare that all the given information are accurate</label>
+                        <input id="declarations" class="med-condition" name="declarations" type="radio" required>
+                    </fieldset>
+
+                    <input id="previous" class="inline-btn" type="button" placeholder="Back">
+                    <input id="submit" class="inline-btn" type="button">
+
+
+
+                </form>
+
+            </div>
+
+            
+
+        </main>
+    </body>
+</html>
